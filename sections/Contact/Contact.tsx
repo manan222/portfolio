@@ -23,8 +23,8 @@ export default function Contact() {
 
       <Container>
         <SectionHeading
-          title="Let&apost;s Work Together"
-          subtitle="Interested in working together or have a project in mind? I&apost;d love to hear from you."
+          title="Let's Work Together"
+          subtitle="Interested in working together or have a project in mind? I'd love to hear from you."
         />
 
         <motion.div

@@ -10,7 +10,7 @@ export default function NotFound() {
       </h2>
 
       <p className="mt-3 max-w-lg text-center text-gray-400">
-        The page you are looking for doesn&apost; exist.
+        The page you are looking for doesn' exist.
       </p>
 
       <Link

@@ -97,7 +97,7 @@ export default function AboutContent() {
         </h2>
 
         <p className="mt-8 leading-8 text-gray-300">
-          I&apost;m Abdul Manan Ali, a Senior Frontend Engineer with over
+          I'm Abdul Manan Ali, a Senior Frontend Engineer with over
           six years of experience building enterprise applications,
           SaaS products, CMS platforms, fintech solutions and
           e-commerce applications using modern JavaScript technologies.
