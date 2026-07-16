@@ -1,6 +1,6 @@
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
+
+export const metadata = {
   metadataBase: new URL("https://abdulmanan.vercel.app"),
 
   title: {

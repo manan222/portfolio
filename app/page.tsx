@@ -3,8 +3,8 @@ import Experience from "../sections/Experience/Experience";
 import Hero from "../sections/Hero/Hero";
 import Projects from "../sections/Projects/Projects";
 import Skills from "../sections/Skills/Skills";
-import Contact from "../sections/Contact/Contact";
 import Footer from "../components/layout/Footer";
+import Contact from "../sections/Contact/Contact";
 
 
 
