@@ -33,7 +33,7 @@ export default function HeroContent() {
             transition={{ duration: .6 }}
             className="mb-3 text-lg text-indigo-400"
           >
-            👋 Hello, I&apost;m
+            👋 Hello, I'm
           </motion.p>
 
           <motion.h1
