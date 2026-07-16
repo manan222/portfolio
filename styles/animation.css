@@ -1,0 +1,200 @@
+/* Glow */
+
+.glow-card {
+
+    transition: .35s;
+}
+
+.glow-card:hover {
+
+    box-shadow:
+        0 0 30px rgba(99, 102, 241, .35),
+        0 0 80px rgba(99, 102, 241, .15);
+
+    transform: translateY(-8px);
+}
+
+/* Gradient Border */
+
+.gradient-border {
+
+    position: relative;
+}
+
+.gradient-border::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -1px;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(135deg,
+            #6366f1,
+            #8b5cf6,
+            #06b6d4,
+            #6366f1);
+
+    background-size: 300%;
+
+    animation:
+        gradientMove 8s linear infinite;
+
+    z-index: -1;
+}
+
+/* Glass */
+
+.glass-card {
+
+    background:
+        rgba(255, 255, 255, .05);
+
+    border:
+
+        1px solid rgba(255, 255, 255, .08);
+
+    backdrop-filter:
+
+        blur(18px);
+}
+
+/* Text */
+
+.text-glow {
+
+    text-shadow:
+
+        0 0 25px rgba(99, 102, 241, .45);
+}
+
+/* Floating */
+
+.float {
+
+    animation:
+
+        floating 5s ease-in-out infinite;
+}
+
+/* Spin */
+
+.slow-spin {
+
+    animation:
+
+        spinSlow 18s linear infinite;
+}
+
+/* Pulse */
+
+.pulse-glow {
+
+    animation:
+
+        pulseGlow 3s infinite;
+}
+
+/* Grid */
+
+.grid-bg {
+
+    background-image:
+
+        linear-gradient(rgba(255, 255, 255, .04) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255, 255, 255, .04) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+}
+
+/* ---------- */
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+@keyframes gradientMove {
+
+    0% {
+
+        background-position: 0%;
+
+    }
+
+    50% {
+
+        background-position: 100%;
+
+    }
+
+    100% {
+
+        background-position: 0%;
+
+    }
+
+}
+
+@keyframes spinSlow {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+@keyframes pulseGlow {
+
+    0% {
+
+        box-shadow: 0 0 10px rgba(99, 102, 241, .2);
+
+    }
+
+    50% {
+
+        box-shadow:
+
+            0 0 40px rgba(99, 102, 241, .55);
+
+    }
+
+    100% {
+
+        box-shadow:
+
+            0 0 10px rgba(99, 102, 241, .2);
+
+    }
+
+}
