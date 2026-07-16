@@ -21,11 +21,11 @@ export default function ContactInfo() {
         </span>
 
         <h2 className="mt-5 text-4xl font-bold text-white">
-          Let's build something amazing together.
+          Let&apost;s build something amazing together.
         </h2>
 
         <p className="mt-5 leading-8 text-gray-400">
-          I'm always interested in discussing new opportunities,
+          I&apost;m always interested in discussing new opportunities,
           React & Next.js projects, enterprise applications,
           or simply connecting with fellow developers.
         </p>

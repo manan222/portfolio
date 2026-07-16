@@ -56,14 +56,13 @@ export default function Projects() {
       <Container>
         <SectionHeading
           title="Featured Projects"
-          subtitle="A selection of enterprise applications, CMS platforms, SaaS products and MERN applications I've built."
+          subtitle="A selection of enterprise applications, CMS platforms, SaaS products and MERN applications I&apost;ve built."
         />
 
         <ProjectFilter
           categories={[...PROJECT_CATEGORIES]}
           selected={selectedCategory}
           onChange={(category)=> {
-            console.log('category from child ==========>', category);
             setSelectedCategory(category)
           }}
         />
