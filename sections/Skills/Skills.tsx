@@ -4,10 +4,8 @@ import { motion } from "framer-motion";
 
 import Container from "../../components/layout/Container";
 import SectionHeading from "../../components/ui/SectionHeading";
-
-import SkillCard from "./SkillCard";
-
 import { SKILLS } from "../../lib/skill";
+import SkillCard from "./SkillCard";
 
 export default function Skills() {
   return (
@@ -45,10 +43,7 @@ export default function Skills() {
           className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3"
         >
           {SKILLS.map((category) => (
-            <SkillCard
-              key={category.id}
-              category={category}
-            />
+            <SkillCard key={category.id} category={category} />
           ))}
         </motion.div>
       </Container>

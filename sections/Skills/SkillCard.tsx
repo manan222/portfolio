@@ -1,15 +1,13 @@
 "use client";
 
+import { SkillCategory } from "@/lib/skill";
 import { motion } from "framer-motion";
-import { SkillCategory } from "../../lib/skills";
 
 interface Props {
   category: SkillCategory;
 }
 
-export default function SkillCard({
-  category,
-}: Props) {
+export default function SkillCard({ category }: Props) {
   const Icon = category.icon;
 
   return (
@@ -39,9 +37,7 @@ export default function SkillCard({
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-white">
-              {category.title}
-            </h3>
+            <h3 className="text-2xl font-bold text-white">{category.title}</h3>
           </div>
         </div>
 
