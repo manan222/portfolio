@@ -6,26 +6,20 @@ import { motion, AnimatePresence } from "framer-motion";
 import Container from "../../components/layout/Container";
 import SectionHeading from "../../components/ui/SectionHeading";
 
-import {
-  PROJECTS,
-  PROJECT_CATEGORIES,
-} from "../../lib/projects";
+import { PROJECTS, PROJECT_CATEGORIES } from "../../lib/projects";
 
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectsCard";
 
 export default function Projects() {
-  const [selectedCategory, setSelectedCategory] =
-    useState<(typeof PROJECT_CATEGORIES)[number]>("All");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects = useMemo(() => {
     if (selectedCategory === "All") {
       return PROJECTS;
     }
 
-    return PROJECTS.filter(
-      (project) => project.category === selectedCategory
-    );
+    return PROJECTS.filter((project) => project.category === selectedCategory);
   }, [selectedCategory]);
 
   return (
@@ -87,10 +81,7 @@ export default function Projects() {
           >
             {filteredProjects.length > 0 ? (
               filteredProjects.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                />
+                <ProjectCard key={project.id} project={project} />
               ))
             ) : (
               <div className="col-span-full flex items-center justify-center py-24">
