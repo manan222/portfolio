@@ -159,7 +159,7 @@ export default function AboutContent() {
 
         {/* Technologies */}
 
-        <div className="mt-12 flex flex-wrap gap-5">
+        {/* <div className="mt-12 flex flex-wrap gap-5">
 
           <FaReact
             className="text-cyan-400"
@@ -196,7 +196,7 @@ export default function AboutContent() {
             size={36}
           />
 
-        </div>
+        </div> */}
 
         {/* CTA */}
 

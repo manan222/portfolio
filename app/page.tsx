@@ -14,9 +14,10 @@ export default function HomePage() {
   return (
     <main className="overflow-x-hidden">
       <Hero />
-      <About/>
-      <Skills />
+      {/* <About/> */}
       <Experience/>
+      <Skills />
+      
       <Projects/>
       <Contact/>
       <Footer/>

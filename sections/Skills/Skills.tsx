@@ -1,48 +1,55 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import Container from "../../components/layout/Container";
 import SectionHeading from "../../components/ui/SectionHeading";
-import SkillCategory from "./SkillCategory";
 
-import { motion } from "framer-motion";
-import { staggerContainer } from "../../utils/animation";
+import SkillCard from "./SkillCard";
 
-import { SKILL_CATEGORIES } from "../../lib/skill";
+import { SKILLS } from "../../lib/skill";
 
 export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden py-32 bg-[#050816]"
+      className="relative overflow-hidden bg-[#050816] py-32"
     >
-      {/* Background Effects */}
+      {/* Background Glow */}
 
-      <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-indigo-600/10 blur-[150px]" />
+      <div className="absolute left-0 top-20 h-96 w-96 rounded-full bg-indigo-600/10 blur-[180px]" />
 
-      <div className="absolute right-0 bottom-10 h-96 w-96 rounded-full bg-cyan-500/10 blur-[180px]" />
+      <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[180px]" />
+
+      {/* Grid */}
+
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px)
+          `,
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <Container>
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{
-            once: true,
-          }}
-        >
-          <SectionHeading
-            title="Skills"
-            subtitle="Technologies and tools I use to build scalable, performant, and modern web applications."
-          />
+        <SectionHeading
+          title="Technical Skills"
+          subtitle="Technologies, frameworks, cloud platforms and tools I've used to build scalable enterprise applications."
+        />
 
-          <div className="space-y-20">
-            {SKILL_CATEGORIES.map((category) => (
-              <SkillCategory
-                key={category.title}
-                category={category}
-              />
-            ))}
-          </div>
+        <motion.div
+          layout
+          className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3"
+        >
+          {SKILLS.map((category) => (
+            <SkillCard
+              key={category.id}
+              category={category}
+            />
+          ))}
         </motion.div>
       </Container>
     </section>
