@@ -12,6 +12,14 @@ import { MdWorkspacePremium, MdEmail, MdLocationOn } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 export default function HeroContent() {
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "Abdul-Manan-Frontend-Resume.pdf";
+    link.download = "Abdul-Manan-Frontend-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Container>
       <div className="grid min-h-screen items-center gap-16 pt-24 lg:grid-cols-2">
@@ -107,7 +115,7 @@ export default function HeroContent() {
           >
             <Button href="#contact">Hire Me</Button>
 
-            <Button href="/resume.pdf" variant="secondary">
+            <Button onClick={downloadResume} variant="secondary">
               <span className="flex items-center gap-2">
                 <FaDownload />
                 Resume
