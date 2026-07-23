@@ -24,7 +24,7 @@ export const EXPERIENCE: Experience[] = [
 
     startDate: "2024",
 
-    endDate: "Present",
+    endDate: "2026",
 
     current: true,
 
@@ -104,9 +104,9 @@ export const EXPERIENCE: Experience[] = [
 
     location: "Lahore, Pakistan",
 
-    startDate: "2020",
+    startDate: "01-07-2020",
 
-    endDate: "2021",
+    endDate: "01-04-2021",
 
     current: false,
 
@@ -143,9 +143,9 @@ export const EXPERIENCE: Experience[] = [
 
     location: "Lahore, Pakistan",
 
-    startDate: "2019",
+    startDate: "01-01-2020",
 
-    endDate: "2020",
+    endDate: "30-06-2020",
 
     current: false,
 
