@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden bg-[#050816]"
+      className="relative flex min-h-screen items-center  bg-[#050816]"
     >
       <MouseSpotlight />
 

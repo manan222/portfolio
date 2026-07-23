@@ -7,7 +7,7 @@ import { CONTACT_INFO, SOCIAL_LINKS } from "../../lib/contacts";
 
 export default function ContactInfo() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 ">
       {/* Heading */}
 
       <div>
@@ -15,14 +15,13 @@ export default function ContactInfo() {
           Contact Information
         </span>
 
-        <h2 className="mt-5 text-4xl font-bold text-white">
+        <h2 className="mt-5 md:text-4xl text-md font-bold text-white">
           Let's build something amazing together.
         </h2>
 
-        <p className="mt-5 leading-8 text-gray-400">
+        <p className="mt-5 md:leading-8 leading-5 sm text-gray-400 text-[11px]">
           I'm always interested in discussing new opportunities, React & Next.js
-          projects, enterprise applications, or simply connecting with fellow
-          developers.
+          projects.
         </p>
       </div>
 
@@ -57,9 +56,9 @@ export default function ContactInfo() {
               }}
               className="group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:border-indigo-500/40 hover:bg-white/10"
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-500/10">
+              <div className="flex h-4 w-4 items-center justify-center rounded-2xl bg-indigo-500/10">
                 <Icon
-                  size={26}
+                  size={20}
                   className="text-indigo-400 transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
@@ -69,7 +68,7 @@ export default function ContactInfo() {
                   {item.title}
                 </h4>
 
-                <p className="mt-1 text-lg font-semibold text-white">
+                <p className="mt-1 md:text-lg text-sm font-semibold text-white">
                   {item.value}
                 </p>
               </div>

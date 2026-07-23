@@ -22,7 +22,7 @@ export default function HeroContent() {
   };
   return (
     <Container>
-      <div className="grid min-h-screen items-center gap-16 pt-24 lg:grid-cols-2">
+      <div className="grid  items-center gap-16 pt-24 lg:grid-cols-2">
         {/* Left */}
 
         <div>
@@ -39,7 +39,7 @@ export default function HeroContent() {
             initial={{ opacity: 0, y: 35 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-5xl font-black leading-tight md:text-7xl"
+            className="md:text-5xl sm:text-4xl xs:text-2xl font-black leading-tight "
           >
             Abdul Manan <span className="gradient-text">Ali</span>
           </motion.h1>
@@ -48,7 +48,7 @@ export default function HeroContent() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="mt-6 text-2xl font-semibold text-indigo-300 md:text-3xl"
+            className="mt-6 md:text-2xl text-xl font-semibold text-indigo-300 md:text-3xl"
           >
             Senior Frontend Engineer
           </motion.h2>
@@ -57,7 +57,7 @@ export default function HeroContent() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
-            className="mt-8 max-w-xl text-lg leading-8 text-gray-300"
+            className="mt-8 max-w-xl md:text-lg text-[12px] md:leading-8 leading-5 text-gray-300"
           >
             I'm Abdul Manan Ali, a Senior Frontend Engineer with over six years
             of experience building enterprise applications, SaaS products, CMS
@@ -69,7 +69,7 @@ export default function HeroContent() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
-            className="mt-6 max-w-xl text-lg leading-8 text-gray-300"
+            className="mt-6 md:text-lg text-[12px] md:leading-8 leading-5 text-gray-300"
           >
             I enjoy transforming complex business requirements into intuitive
             user experiences while focusing on performance, scalability, and
@@ -172,7 +172,7 @@ export default function HeroContent() {
           transition={{
             duration: 0.9,
           }}
-          className="flex justify-center"
+          className="flex justify-center object-center"
         >
           <ProfileImage />
         </motion.div>
