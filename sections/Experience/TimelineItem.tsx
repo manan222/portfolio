@@ -91,7 +91,7 @@ export default function TimelineItem({
                 <FaCalendarAlt className="text-indigo-400" />
 
                 <span>
-                  {experience.startDate
+                  {experience.endDate
                     ? `${experience.startDate} — ${experience.endDate ? experience.endDate : 'Present'}`
                     : null}
                 </span>
