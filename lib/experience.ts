@@ -24,7 +24,7 @@ export const EXPERIENCE: Experience[] = [
 
     startDate: "2024",
 
-    endDate: "2026",
+    endDate: "",
 
     current: true,
 
